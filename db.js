@@ -237,12 +237,14 @@ const CustomerTemp = db.define('CustomerTemp',{
 });
 
 db.sync().then(()=>{
-    console.log('Cart Database Ready!!');
+    console.log('All Database Ready!! Good to Go');
 });
 
 
 
 module.exports = {
+    Customer,
+    CustomerTemp,
     Employee_Attendance,
     Employee_Table,
     Salary_Employee,
